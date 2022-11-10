@@ -3,3 +3,12 @@
 @tailwind components;
 
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #1d2023;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}

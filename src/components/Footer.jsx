@@ -18,22 +18,58 @@ const Footer = () => {
       <div className="flex flex-col text-sm m-2 mb-2 lg:mb-0">
         <p className="text-gray-400 mb-2">Find Us</p>
         <ul>
-          <li className="p-1">Twitter</li>
-          <li className="p-1">Instagram</li>
-          <li className="p-1">Spotify</li>
-          <li className="p-1">Youtube</li>
+          <li className="p-1 transition-all duration-150 ease-in-out hover:text-[#ffc843]">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/loudronline?s=21&t=4VyljR8hroJAQQevVbRdFQ"
+            >
+              Twitter
+            </a>
+          </li>
+          <li className="p-1 transition-all duration-150 ease-in-out hover:text-[#ffc843]">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://instagram.com/loudronline?igshid=YmMyMTA2M2Y="
+            >
+              Instagram
+            </a>
+          </li>
+          <li className="p-1 transition-all duration-150 ease-in-out hover:text-[#ffc843]">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://open.spotify.com/playlist/2RyqK3ZGMn6gK8ob5rI42U?si=yWY4GN5vTHOk7xvmI4yuHQ"
+            >
+              Spotify
+            </a>
+          </li>
+          <li className="p-1 transition-all duration-150 ease-in-out hover:text-[#ffc843]">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://youtube.com/channel/UC5RsaqmLUpwLvsW6xoJC1Bg?sub_confirmation=1"
+            >
+              Youtube
+            </a>
+          </li>
         </ul>
       </div>
       <div className="flex flex-col text-sm m-2 mb-2 lg:mb-0">
         <p className="text-gray-400 mb-2">Quick Links</p>
         <ul>
-          <li className="p-1">Contact</li>
+          <li className="p-1 transition-all duration-150 ease-in-out hover:text-[#ffc843]">
+            <a href="mailto:salesteam@magpollo.com">Contact</a>
+          </li>
         </ul>
       </div>
       <div className="flex flex-col text-sm m-2 mb-2 lg:mb-0">
         <p className="text-gray-400 mb-2">Support</p>
         <ul>
-          <li className="p-1">API Docs</li>
+          <li className="p-1 transition-all duration-150 ease-in-out hover:text-[#ffc843]">
+            <a href="/#">API Docs</a>
+          </li>
         </ul>
       </div>
       <div className="flex flex-col text-sm m-2 mb-2 lg:mb-0">
@@ -44,7 +80,7 @@ const Footer = () => {
           className="w-64 h-10 border-b-[3px] border-gray-400 p-2 bg-inherit placeholder:text-gray-400 outline-none focus:border-[#ffc843] mb-5"
         />
         <button
-          className="bg-white hover:bg-[#ffc843] hover:text-white text-black
+          className="hover:bg-slate-400 transition-all duration-200 ease-in-out bg-[#ffc843] hover:text-[#ffc843] text-black
         text-md font-bold uppercase py-4 px-10 rounded"
         >
           Suscribe

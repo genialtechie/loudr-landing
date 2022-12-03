@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden bg-hero-pattern bg-center bg-cover">
       <Navigation />
       <Main />
       <Footer />

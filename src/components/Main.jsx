@@ -1,10 +1,11 @@
 import React from 'react';
 import Device from '../assets/device.png';
 import { ReactComponent as Bag } from '../assets/shopping-bag.svg';
+import Carousel from './Carousel';
 
 const Main = () => {
   return (
-    <main className="h-fit w-10/12 mx-auto lg:w-full flex flex-col lg:flex-row justify-evenly items-center">
+    <main className="h-fit w-10/12 mt-10 mx-auto lg:w-full flex flex-col lg:flex-row justify-evenly items-center">
       <div className="w-full lg:w-2/5 h-fit">
         <h1 className="text-4xl lg:text-6xl text-white font-extrabold text-left mb-6">
           <p className="mb-2">Propagating</p>
@@ -27,8 +28,9 @@ const Main = () => {
         <img
           src={Device}
           alt="Loudr's Page on a Mobile Device"
-          className="scale-75 mx-auto"
+          className="scale-75 mx-auto lg:hidden"
         />
+        <Carousel className="hidden lg:block" />
       </div>
     </main>
   );

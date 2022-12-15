@@ -1,5 +1,4 @@
 import React from 'react';
-import Device from '../assets/device.png';
 import { ReactComponent as Bag } from '../assets/shopping-bag.svg';
 import Carousel from './Carousel';
 
@@ -25,12 +24,7 @@ const Main = () => {
         </div>
       </div>
       <div className="w-full lg:w-1/5 h-fit">
-        <img
-          src={Device}
-          alt="Loudr's Page on a Mobile Device"
-          className="scale-75 mx-auto lg:hidden"
-        />
-        <Carousel className="hidden lg:block" />
+        <Carousel />
       </div>
     </main>
   );

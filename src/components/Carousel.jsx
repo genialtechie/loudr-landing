@@ -64,8 +64,8 @@ const Carousel = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className="h-fit w-fit text-white ">
-      <div className="w-fit h-[430px] transition-all duration-500 ease-in-out transform hover:scale-105 relative">
+    <div className="scale-75 scale-x-75 lg:scale-100 lg:scale-x-100 h-fit w-fit text-white ">
+      <div className="w-fit h-[430px] transition-all duration-500 ease-in-out transform lg:hover:scale-105 relative">
         {creators.map((creator, index) => (
           <div
             key={creator.name}
@@ -93,7 +93,7 @@ const Carousel = () => {
                 alt={creator.name}
                 className="h-full w-full object-cover rounded-xl object-top"
               />
-              <div className="absolute top-9 -right-24 z-30 h-fit w-fit rounded-lg">
+              <div className="absolute top-9 -right-16 lg:-right-24 z-30 h-fit w-fit rounded-lg">
                 <div className="relative h-36 w-36 rounded-t-lg">
                   <img
                     src={creator.featuredImage[0]}

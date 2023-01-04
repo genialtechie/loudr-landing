@@ -11,10 +11,10 @@ const Main = ({ reference }) => {
   return (
     <main className="h-fit w-10/12 mt-10 mx-auto lg:w-full flex flex-col lg:flex-row justify-evenly items-center">
       <div className="w-full lg:w-2/5 h-fit">
-        <h1 className="text-4xl lg:text-6xl text-white font-extrabold text-left mb-6">
-          Propagating <br />
-          Culture <br />
-          <span className="text-[#ffc843]">& Creators</span>
+        <h1 className="text-4xl lg:text-6xl text-white text-left mb-6">
+          <h1 className="mb-2 font-extrabold">Propagating</h1>
+          <h1 className="mb-2 font-extrabold">Culture</h1>
+          <h1 className="text-[#ffc843] font-extrabold">& Creators</h1>
         </h1>
         <p className="text-md text-left leading-8 mb-6">
           We discover and propagate the best of what culture has to offer and

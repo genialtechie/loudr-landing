@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.svg';
 import Newsletter from './Newsletter';
 
 const Footer = forwardRef((props, ref) => {

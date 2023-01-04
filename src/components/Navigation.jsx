@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.svg';
 import Dropdown from './Dropdown';
 import About from './About';
 import Share from './Share';
@@ -16,7 +16,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="w-11/12 mx-auto h-fit p-4 px-8 flex flex-row items-center justify-center lg:justify-between mb-8 lg:mb-0">
+      <nav className="w-11/12 mx-auto h-fit p-4 px-8 flex flex-row items-center justify-center lg:just mb-8 lg:mb-0">
         <a href="/">
           <img
             src={Logo}
@@ -29,7 +29,7 @@ const Navigation = () => {
           <li
             onClick={handleAbout}
             className={`${
-              openAbout ? 'bg-white text-black' : 'bg-[#24272a] text-white'
+              openAbout && 'bg-white text-black'
             } text-md border border-white uppercase py-4 px-8 bg-[#24272a] rounded-full font-bold transition duration-200 ease-in-out hover:bg-white hover:text-black hover:cursor-pointer`}
           >
             About
@@ -37,7 +37,7 @@ const Navigation = () => {
           <li
             onClick={handleShare}
             className={`${
-              openShare ? 'bg-white text-black' : 'bg-[#24272a] text-white'
+              openShare && 'bg-white text-black'
             } text-md border border-white uppercase py-4 px-8 bg-[#24272a] rounded-full font-bold transition duration-200 ease-in-out hover:bg-white hover:text-black hover:cursor-pointer`}
           >
             Share

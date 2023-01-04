@@ -22,7 +22,7 @@ const Main = ({ reference }) => {
         </p>
         <button
           onClick={handleClick}
-          className="hover:bg-white font-bold bg-[#ffc843] transition duration-200 ease-in-out hover:text-[#ffc843] text-black text-md uppercase w-full py-4 md:w-3/5 rounded mb-4 mx-2"
+          className="hover:bg-white font-bold bg-[#ffc843] transition duration-200 ease-in-out text-black text-md uppercase w-full py-4 md:w-3/5 rounded mb-4 mx-2"
         >
           Suscribe to newsletter
         </button>

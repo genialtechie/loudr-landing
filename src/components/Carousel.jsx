@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-import { ReactComponent as Trend } from '../assets/trending-up.svg';
 import { ReactComponent as RightArrow } from '../assets/chevron-right.svg';
 import { ReactComponent as LeftArrow } from '../assets/chevron-left.svg';
 
@@ -65,28 +64,18 @@ const Carousel = () => {
 
   return (
     <div className="scale-75 scale-x-75 lg:scale-100 lg:scale-x-100 h-fit w-fit text-white ">
-      <div className="w-fit h-[430px] transition-all duration-500 ease-in-out transform lg:hover:scale-105 relative">
+      <div className="w-fit h-[330px] transition-all duration-500 ease-in-out transform lg:hover:scale-105 relative">
         {creators.map((creator, index) => (
           <div
             key={creator.name}
             className={`relative h-fit w-fit mx-5 transition-all duration-500 ease-in-out transform -translate-y-[${
-              currentItem * 410
+              currentItem * 310
             }px] ${
               index === currentItem
                 ? 'transition-all duration-500 ease-in-out block'
                 : 'hidden'
             }`}
           >
-            <div className="flex flex-row items-center justify-start bg-[#141818] rounded-full p-3 w-72 mb-5">
-              <span className="rounded-full p-5 inline-block bg-[#24272A] mr-3">
-                <Trend className="inline-block scale-75" />
-              </span>
-              <p className="inline-block">
-                <span className="text-slate-500 text-sm">Popularity</span>
-                <br />
-                {creator.popularity}
-              </p>
-            </div>
             <div className="h-72 w-72 mx-auto mb-5 rounded-xl relative">
               <img
                 src={creator.images[0]}
@@ -139,7 +128,7 @@ const Carousel = () => {
               src={
                 creators[
                   currentItem - 1 < 0 ? creators.length - 1 : currentItem - 1
-                ]?.featuredImage[0]
+                ]?.images[0]
               }
               alt={
                 creators[
@@ -151,7 +140,7 @@ const Carousel = () => {
           </div>
           <div className="h-12 w-12 mx-2 rounded-full ring-1 ring-offset-8 ring-[#ffc843] ring-offset-[#141818]">
             <img
-              src={creators[currentItem]?.featuredImage[0]}
+              src={creators[currentItem]?.images[0]}
               alt={creators[currentItem]?.featuredWork}
               className="h-full w-full rounded-full object-cover object-center"
             />
@@ -162,7 +151,7 @@ const Carousel = () => {
                 src={
                   creators[
                     currentItem + 1 > creators.length - 1 ? 0 : currentItem + 1
-                  ]?.featuredImage[0]
+                  ]?.images[0]
                 }
                 alt={
                   creators[

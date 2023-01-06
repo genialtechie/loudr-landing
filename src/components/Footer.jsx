@@ -1,8 +1,11 @@
 import React, { forwardRef } from 'react';
 import Logo from '../assets/logo.svg';
 import Newsletter from './Newsletter';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 const Footer = forwardRef((props, ref) => {
+  const url =
+    'https://online.us14.list-manage.com/subscribe/post?u=2e88ff683941de4e0ea8a42ea&amp;id=55fcc6e9af&amp;f_id=00e68fe0f0';
   return (
     <footer className="w-full h-fit p-7 lg:p-14 bg-[#141818] flex flex-col md:flex-row justify-around">
       <div className="flex flex-col m-2 mb-2 lg:mb-0">
@@ -73,7 +76,17 @@ const Footer = forwardRef((props, ref) => {
         </ul>
       </div>
       <div>
-        <Newsletter reference={ref} />
+        <MailchimpSubscribe
+          url={url}
+          render={({ subscribe, status, message }) => (
+            <Newsletter
+              reference={ref}
+              status={status}
+              message={message}
+              onValidated={(formData) => subscribe(formData)}
+            />
+          )}
+        />
       </div>
     </footer>
   );

@@ -33,7 +33,7 @@ const Share = () => {
           className="flex flex-col items-center justify-center p-5 rounded-lg group bg-[#24272a] hover:scale-110 cursor-pointer"
         >
           <Twitter className="h-10 w-10 mb-1" />
-          <span className="text-xs font-bold group-hover:text-[#ffc843]">
+          <span className="text-xs lg:font-bold group-hover:text-[#ffc843]">
             Twitter
           </span>
         </div>
@@ -44,17 +44,17 @@ const Share = () => {
         >
           <div className="flex flex-col items-center justify-center p-5 rounded-lg group bg-[#24272a] hover:scale-110 cursor-pointer">
             <Instagram className="h-10 w-10 mb-1" />
-            <span className="text-xs font-bold group-hover:text-[#ffc843]">
+            <span className="text-xs lg:font-bold group-hover:text-[#ffc843]">
               Instagram
             </span>
           </div>
         </a>
         <div
           onClick={copyToClipboard}
-          className="flex flex-col items-center justify-center p-5 rounded-lg group bg-[#24272a] hover:scale-110 cursor-pointer"
+          className="flex flex-col items-center justify-center p-4 lg:p-5 rounded-lg group bg-[#24272a] hover:scale-110 cursor-pointer"
         >
           <Clone className="fill-white h-10 w-10 mb-1 group-hover:fill-[#ffc843]" />
-          <span className="text-xs font-bold group-hover:text-[#ffc843]">
+          <span className="text-xs lg:font-bold group-hover:text-[#ffc843]">
             {copied ? 'Copied!' : 'Copy link'}
           </span>
         </div>

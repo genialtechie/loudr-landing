@@ -4,7 +4,7 @@ import { ReactComponent as Github } from '../assets/github.svg';
 const About = () => {
   return (
     <div>
-      <h1 className="font-bold text-xl mb-3">About loudronline</h1>
+      <h1 className="font-bold text-sm mb-2 text-gray-400 uppercase">About</h1>
       <p className="text-sm mb-5">
         Loudr is a creative company that is dedicated to a new generation of
         young and influential creators. We find and share the finest of what

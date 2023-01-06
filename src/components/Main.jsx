@@ -11,7 +11,7 @@ const Main = ({ reference }) => {
   return (
     <main className="h-fit w-10/12 mt-10 mx-auto lg:w-full flex flex-col lg:flex-row justify-evenly items-center">
       <div className="w-full lg:w-2/5 h-fit">
-        <h1 className="text-6xl text-white text-left mb-6 font-extrabold">
+        <h1 className="text-5xl lg:text-6xl text-white text-left mb-6 font-extrabold">
           <span className="block mb-2">Propagating</span>
           <span className="block mb-2">Culture</span>
           <span className="text-[#ffc843]">& Creators</span>
